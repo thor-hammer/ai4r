@@ -208,7 +208,7 @@ module Ai4r
 
       def calculate_class_probabilities
         @data_items.each do |entry|
-          @class_counts[klass_index(entry.klass)] += 1
+          @class_counts[klass_index(entry.klass).to_i] += 1
         end
 
         @class_counts.each_with_index do |k, index|
