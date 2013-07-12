@@ -32,6 +32,7 @@ module Ai4r
       # as parameter. The last attribute of each item is considered as 
       # the item class.
       def build(data_set)
+        reguire 'debugger'; debugger
         data_set.check_not_empty
         @data_set = data_set
         domains = @data_set.build_domains
